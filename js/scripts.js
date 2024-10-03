@@ -6,15 +6,14 @@
 //
 // Scripts
 // 
-
 window.onload = function() {
     // Add an entry to the browser's history
     history.pushState(null, "", location.href);
 
     // Listen for the popstate event
     window.addEventListener('popstate', function(event) {
-        // Navigate to index.html
-        window.location.href = 'index.html';
+        // Reload the page
+        location.reload();
     });
 };
 window.addEventListener('DOMContentLoaded', event => {
