@@ -59,6 +59,11 @@ const popup5=document.getElementById("popup-sales")
 const popup6=document.getElementById("popup-consult")
 const container=document.getElementsByClassName("container-lg")
 const exit=document.getElementById("exit")
+const exit1=document.getElementById("exit1")
+const exit2=document.getElementById("exit2")
+const exit3=document.getElementById("exit3")
+const exit4=document.getElementById("exit4")
+const exit5=document.getElementById("exit5")
 btn1.onclick=function(){
     body.style.visibility="hidden"
     body.style.overflow="hidden"
@@ -104,7 +109,73 @@ btn7.onclick=function(){
     
 exit.onclick=function(){
     body.style.visibility="visible"
+    body.style.overflow="auto"
     popup.style.visibility="hidden"
+    popup2.style.visibility="hidden"
+    popup3.style.visibility="hidden"
+    popup4.style.visibility="hidden"
+    popup5.style.visibility="hidden"
+    popup6.style.visibility="hidden"
+    popup.classList.remove("open")
+
+}
+exit1.onclick=function(){
+    body.style.visibility="visible"
+    body.style.overflow="auto"
+    popup.style.visibility="hidden"
+    popup2.style.visibility="hidden"
+    popup3.style.visibility="hidden"
+    popup4.style.visibility="hidden"
+    popup5.style.visibility="hidden"
+    popup6.style.visibility="hidden"
+    popup.classList.remove("open")
+
+}
+exit2.onclick=function(){
+    body.style.visibility="visible"
+    body.style.overflow="auto"
+    popup.style.visibility="hidden"
+    popup2.style.visibility="hidden"
+    popup3.style.visibility="hidden"
+    popup4.style.visibility="hidden"
+    popup5.style.visibility="hidden"
+    popup6.style.visibility="hidden"
+    popup.classList.remove("open")
+
+}
+exit3.onclick=function(){
+    body.style.visibility="visible"
+    body.style.overflow="auto"
+    popup.style.visibility="hidden"
+    popup2.style.visibility="hidden"
+    popup3.style.visibility="hidden"
+    popup4.style.visibility="hidden"
+    popup5.style.visibility="hidden"
+    popup6.style.visibility="hidden"
+    popup.classList.remove("open")
+
+}
+exit4.onclick=function(){
+    body.style.visibility="visible"
+    body.style.overflow="auto"
+    popup.style.visibility="hidden"
+    popup2.style.visibility="hidden"
+    popup3.style.visibility="hidden"
+    popup4.style.visibility="hidden"
+    popup5.style.visibility="hidden"
+    popup6.style.visibility="hidden"
+    popup.classList.remove("open")
+
+}
+exit5.onclick=function(){
+    body.style.visibility="visible"
+    body.style.overflow="auto"
+    popup.style.visibility="hidden"
+    popup2.style.visibility="hidden"
+    popup3.style.visibility="hidden"
+    popup4.style.visibility="hidden"
+    popup5.style.visibility="hidden"
+    popup6.style.visibility="hidden"
     popup.classList.remove("open")
 
 }
