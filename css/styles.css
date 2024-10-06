@@ -100,7 +100,6 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -323,7 +322,7 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+ 
 }
 
 thead,
@@ -10975,13 +10974,13 @@ header.masthead .masthead-heading {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
-    font-size: 3.25rem;
+    font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 2rem;
