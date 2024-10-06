@@ -17,6 +17,7 @@
           "text-align: -webkit-match-parent"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }
