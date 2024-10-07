@@ -201,3 +201,21 @@ exit5.onclick=function(){
     popup.classList.remove("open")
 
 }
+// Select the navbar collapse element
+const navbarCollapse = document.getElementById('navbarResponsive');
+
+// Function to check if a click happened outside the navbar toggle area
+document.addEventListener('click', function (event) {
+    const isClickInsideNavbar = navbarCollapse.contains(event.target);
+    const isClickOnToggle = document.querySelector('.navbar-toggler').contains(event.target);
+
+    // If the navbar is expanded and the click is outside the navbar and the toggle button
+    if (!isClickInsideNavbar && !isClickOnToggle && navbarCollapse.classList.contains('show')) {
+        // Use Bootstrap's collapse method to close the navbar
+        const collapseInstance = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+        });
+        collapseInstance.hide(); // Collapse the navbar
+    }
+});
+
