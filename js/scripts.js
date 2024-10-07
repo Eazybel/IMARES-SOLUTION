@@ -6,16 +6,29 @@
 //
 // Scripts
 // 
-window.onload = function() {
-    // Add an entry to the browser's history
-    history.pushState(null, "", location.href);
+// Detect when the back button is clicked and reload the page
+window.addEventListener("popstate", function () {
+    location.reload(); // Reloads the page only when navigating back
+});
 
-    // Listen for the popstate event
-    window.addEventListener('popstate', function(event) {
-        // Reload the page
-        location.reload();
+// Handle anchor links for smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default jump behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the target element's ID
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth' // Enable smooth scrolling
+            });
+        }
+
+        // Update URL hash without reloading the page
+        history.pushState(null, null, `#${targetId}`);
     });
-};
+});
+
 window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
