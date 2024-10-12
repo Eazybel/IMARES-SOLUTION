@@ -202,3 +202,50 @@
       width: 100%; /* Full-width buttons in mobile */
   }
 }
+/* Styling for the Back to Top button */
+#backToTop {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  display: none;
+  z-index: 9999;
+  width: 50px; /* Equal width and height */
+  height: 50px; /* Equal width and height */
+  border-radius: 50%; /* Perfect circle */
+  padding: 0; /* No extra padding */
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for elevation */
+  font-size: 24px; /* Adjust font size to fit within the button */
+}
+
+/* On hover, change button appearance */
+#backToTop:hover {
+  background-color: #067bc8;
+  transform: scale(1.1);
+}
+
+/* Media query for smaller devices */
+@media (max-width: 575.98px) {
+  #backToTop {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      bottom: 5%;
+      right: 5%;
+  }
+}
+
+/* Media query for very large screens (TVs) */
+@media (min-width: 1200px) {
+  #backToTop {
+      width: 60px;
+      height: 60px;
+      font-size: 28px;
+      bottom: 2%;
+      right: 2%;
+  }
+}
