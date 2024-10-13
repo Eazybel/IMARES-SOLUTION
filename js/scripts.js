@@ -7,7 +7,16 @@
 // Scripts
 // 
 // Detect when the back button is clicked and reload the page
+window.onload = function() {
+    // Add an entry to the browser's history
+    history.pushState(null, "", location.href);
 
+    // Listen for the popstate event
+    window.addEventListener('popstate', function(event) {
+        // Reload the page
+        location.reload();
+    });
+};
 
 // Handle anchor links for smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -216,7 +225,6 @@ document.addEventListener('click', function (event) {
         collapseInstance.hide(); // Collapse the navbar
     }
 });
-
 window.onscroll = function () {
     var backToTop = document.getElementById("backToTop");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -230,13 +238,3 @@ window.onscroll = function () {
 document.getElementById('backToTop').addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-
-window.history.pushState(null, null, window.location.href);
-
-// Detect when the user presses the back button
-window.onpopstate = function() {
-    // Reload the current page when the back button is pressed
-    location.reload();
-};
-
-
