@@ -7,9 +7,7 @@
 // Scripts
 // 
 // Detect when the back button is clicked and reload the page
-window.addEventListener("popstate", function () {
-    location.reload(); // Reloads the page only when navigating back
-});
+
 
 // Handle anchor links for smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -232,7 +230,13 @@ window.onscroll = function () {
 document.getElementById('backToTop').addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-window.onpopstate = function(event) {
-    // This will reload the page whenever the back button is pressed
+
+window.history.pushState(null, null, window.location.href);
+
+// Detect when the user presses the back button
+window.onpopstate = function() {
+    // Reload the current page when the back button is pressed
     location.reload();
 };
+
+
