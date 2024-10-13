@@ -218,6 +218,7 @@ document.addEventListener('click', function (event) {
         collapseInstance.hide(); // Collapse the navbar
     }
 });
+
 window.onscroll = function () {
     var backToTop = document.getElementById("backToTop");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -231,3 +232,7 @@ window.onscroll = function () {
 document.getElementById('backToTop').addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+window.onpopstate = function(event) {
+    // This will reload the page whenever the back button is pressed
+    location.reload();
+};
