@@ -232,7 +232,7 @@
 @media (max-width: 575.98px) {
   #backToTop {
       width: 40px;
-      height: 40px;
+      min-height: 40px;
       font-size: 20px;
       bottom: 5%;
       right: 5%;
