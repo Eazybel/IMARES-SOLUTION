@@ -249,29 +249,38 @@
       right: 2%;
   }
 }
-  .slogan {
-            font-size: 2rem;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
+.slogan-container {
+            width: 95%;
+            max-width: 1000px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
+
+        .slogan {
+            text-align: center;
+            line-height: 1.4;
+            color: #333333;
+        }
+
+        .slogan-text {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
         .emphasized {
             display: block;
-            font-size: 3rem;
-            font-weight: bold;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
             color: #0066cc;
-            margin-top: 10px;
+            margin-top: 20px;
+            text-transform: uppercase;
         }
-        @media (max-width: 600px) {
-            .slogan {
-                font-size: 1.5rem;
-                padding: 15px;
+
+        @media (max-width: 480px) {
+            .slogan-container {
+                padding: 30px;
             }
-            .emphasized {
-                font-size: 2.5rem;
-            }
-        }
+  }
