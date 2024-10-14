@@ -250,21 +250,36 @@
   }
 }
 .slogan-container {
-  width: 90%;            /* Take up 80% of the screen width */
- min-height: 7vh;     /* Minimum height of 30vh */
-  padding: 20px;        /* Padding for spacing */
+  width: 100%;             /* Take up 90% of the screen width */
+  padding: 10px;          /* Reduced padding for less space */
   background-color: white; /* Background color */
-  border-radius: 8px;   /* Rounded corners */
+  border-radius: 8px;     /* Rounded corners */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deep box shadow */
+  display: flex;          /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  text-align: center;     /* Center text */
+  flex-direction: column; /* Stack items vertically */
+  line-height: 1.3;       /* Reduced line height for more compact text */
+  min-height: auto;       /* Allow height to adjust to content */
 }
 
 .slogan-text {
-  font-size: 2rem;      /* Font size */
-  text-align: center;   /* Center the text */
+  font-size: 1.8rem;      /* Slightly smaller font size */
+  margin: 0;              /* Remove default margins */
+  text-align: center;     /* Center the text */      /* Adjust line height for compactness */
+}
+.slogan-highlight {
+  color: #007bff;         /* Text color */
+  text-decoration: underline; /* Underline the text */
+  text-underline-offset: 10px; /* Space between text and underline */
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
   .slogan-text {
-      font-size: 1.5rem;  /* Smaller font size for mobile */
+    font-size: 1.3rem;    /* Smaller font size for mobile */
+    line-height: 1.2;     /* Tighter line height for smaller screens */
   }
 }
+
