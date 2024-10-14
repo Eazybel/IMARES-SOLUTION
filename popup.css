@@ -249,38 +249,24 @@
       right: 2%;
   }
 }
-.slogan-container {
-            width: 95%;
-            max-width: 1000px;
-            background-color: #ffffff;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
+.slogan {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 90%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
 
-        .slogan {
-            text-align: center;
-            line-height: 1.4;
-            color: #333333;
-        }
+.highlight {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d9534f; /* Example color for emphasis */
+}
 
-        .slogan-text {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-
-        .emphasized {
-            display: block;
-            font-size: clamp(3rem, 8vw, 6rem);
-            font-weight: 700;
-            color: #0066cc;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        @media (max-width: 480px) {
-            .slogan-container {
-                padding: 30px;
-            }
-  }
+@media (max-width: 600px) {
+    .highlight {
+        font-size: 1.2em;
+    }
+}
