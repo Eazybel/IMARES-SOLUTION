@@ -249,18 +249,22 @@
       right: 2%;
   }
 }
-highlight {
-            font-weight: bold;
-            color: #d9534f; /* Example color for emphasis */
-        }
+.slogan-container {
+  width: 90%;            /* Take up 80% of the screen width */
+  min-height: 10vh;     /* Minimum height of 30vh */
+  padding: 20px;        /* Padding for spacing */
+  background-color: white; /* Background color */
+  border-radius: 8px;   /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deep box shadow */
+}
 
-        @media (max-width: 600px) {
-            .highlight {
-                font-size: 1.3em; /* Adjust highlight size on smaller screens */
-            }
-        }
+.slogan-text {
+  font-size: 2rem;      /* Font size */
+  text-align: center;   /* Center the text */
+}
 
-        /* Custom class to set a smaller font size */
-        .slogan-text {
-            font-size: 1.5rem; /* Adjust this value to change text size */
-        }
+@media (max-width: 768px) {
+  .slogan-text {
+      font-size: 1.5rem;  /* Smaller font size for mobile */
+  }
+}
