@@ -249,18 +249,3 @@
       right: 2%;
   }
 }
-highlight {
-            font-weight: bold;
-            color: #d9534f; /* Example color for emphasis */
-        }
-
-        @media (max-width: 600px) {
-            .highlight {
-                font-size: 1.2em; /* Adjust highlight size on smaller screens */
-            }
-        }
-
-        /* Custom class to set a smaller font size */
-        .slogan-text {
-            font-size: 1.5rem; /* Adjust this value to change text size */
-        }
