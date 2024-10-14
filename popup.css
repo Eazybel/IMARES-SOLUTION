@@ -259,23 +259,13 @@
     transition: all 0.3s ease;
 }
 
-.slogan p {
-    font-size: 2em; /* Increase the font size for larger text */
-    margin: 0; /* Remove default margin to ensure proper alignment */
-}
-
 .highlight {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #d9534f; /* Example color for emphasis */
-}
+            font-weight: bold;
+            color: #d9534f; /* Example color for emphasis */
+        }
 
-@media (max-width: 600px) {
-    .slogan p {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-    }
-
-    .highlight {
-        font-size: 1.2em; /* Keep highlight size smaller on mobile */
-    }
-}
+        @media (max-width: 600px) {
+            .highlight {
+                font-size: 1.2em; /* Adjust highlight size on smaller screens */
+            }
+        }
