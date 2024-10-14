@@ -251,7 +251,7 @@
 }
 .slogan-container {
   width: 90%;            /* Take up 80% of the screen width */
-  min-height: 10vh;     /* Minimum height of 30vh */
+ min-height: 7vh;     /* Minimum height of 30vh */
   padding: 20px;        /* Padding for spacing */
   background-color: white; /* Background color */
   border-radius: 8px;   /* Rounded corners */
