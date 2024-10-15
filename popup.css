@@ -283,6 +283,51 @@
   }
 }
 
-.descript{
-  font-size: 3vh;
+/* Margin between the text and the close button */
+.close-button {
+  margin-bottom: 20px; /* Add margin below the close button */
 }
+/* Responsive font size for p.descript */
+p.descript {
+  font-size: calc(0.5rem + 1vw); /* Scale based on viewport width */
+  line-height: 1.5;
+  text-align: justify;
+  word-wrap: break-word;
+  max-width: 100%; /* Prevent overflow */
+  margin-top: 20px; /* Space between the close button and text */
+}
+
+/* Responsive font size for buttons */
+.btnn {
+  font-size: calc(0.5rem + 1vw); /* Scale font size based on viewport width */
+  padding: 10px 20px;
+  width: 100%; 
+  margin-bottom: 2vh;/* Ensure the button takes full width */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  p.descript {
+    font-size: calc(0.5rem + 1.5vw); /* Slightly smaller font for mobile */
+  }
+
+  .btnn {
+    font-size: calc(0.5rem + 1.5vw); /* Adjust button font for mobile */
+    padding: 8px 16px;
+    margin-bottom: 2vh; /* Reduce padding for smaller screens */
+  }
+}
+
+/* Extra control for very small screens */
+@media (max-width: 480px) {
+  p.descript {
+    font-size: 1rem; /* Limit minimum size to fit on very small screens */
+  }
+
+  .btnn {
+    font-size: 1rem; /* Limit button text size for very small screens */
+    padding: 6px 12px;
+    margin-bottom: 2vh; /* Further reduce padding */
+  }
+}
+
