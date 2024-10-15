@@ -290,11 +290,12 @@
 /* Responsive font size for p.descript */
 p.descript {
   font-size: calc(0.5rem + 1vw); /* Scale based on viewport width */
-  line-height: 1.5;
+  line-height: 1.4; /* Slightly reduced line height to manage spacing */
   text-align: justify;
   word-wrap: break-word;
   max-width: 100%; /* Prevent overflow */
   margin-top: 20px; /* Space between the close button and text */
+  hyphens: auto; /* Allows text hyphenation to reduce spacing in justified text */
 }
 
 /* Responsive font size for buttons */
@@ -302,7 +303,7 @@ p.descript {
   font-size: calc(0.5rem + 1vw); /* Scale font size based on viewport width */
   padding: 10px 20px;
   width: 100%; 
-  margin-bottom: 2vh;/* Ensure the button takes full width */
+  margin-bottom: 2vh; /* Space below the button */
 }
 
 /* Adjust for smaller screens */
@@ -330,4 +331,5 @@ p.descript {
     margin-bottom: 2vh; /* Further reduce padding */
   }
 }
+
 
