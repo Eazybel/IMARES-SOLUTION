@@ -295,7 +295,7 @@ p.descript {
   word-wrap: break-word;
   max-width: 100%; /* Prevent overflow */
   margin-top: 20px; /* Space between the close button and text */
-  hyphens: auto; /* Allows text hyphenation to reduce spacing in justified text */
+ -webkit-hyphens: auto; /* Allows text hyphenation to reduce spacing in justified text */
 }
 
 /* Responsive font size for buttons */
